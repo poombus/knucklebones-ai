@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-ejs-template",
+  "version": "0.1.0",
+  "description": "a simple site structure running on nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poombus/nodejs-ejs-template.git"
+  },
+  "keywords": [
+    "template",
+    "nodejs",
+    "ejs"
+  ],
+  "author": "poombus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poombus/nodejs-ejs-template/issues"
+  },
+  "homepage": "https://github.com/poombus/nodejs-ejs-template#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1"
+  }
+}
