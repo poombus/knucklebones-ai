@@ -1,3 +1,6 @@
+const ml = require('./modules/ml');
+const kb = require('./modules/knucklebones');
+
 const appVersion = require('./package.json').version;
 const port = 3002;
 
@@ -16,8 +19,12 @@ app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'ejs');
 
 let index = require('./routes/index');
+let game = require('./routes/game');
+let training = require('./routes/training');
 
 app.use('/',index);
+app.use('/game',game);
+app.use('/training',training);
 app.use(require('./routes/err404')); //err404
 
 //=================================
@@ -40,4 +47,6 @@ async function startApp() {
     });;
 
     setupSocket();
+
+    kb.populateTournament();
 } 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link id="favicon" rel="icon" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="tabTitle">Knucklebones</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/stylesheets/default.css" />
+    <link rel="stylesheet" href="/stylesheets/game.css" />
+
+    <!--Socket HTML Integration-->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/scripts/knucklebones.js" defer></script>
+</head>
+<body>
+    <h1>Training.</h1>
+    <center>
+        <div id="game" style="display:none;">
+            <h2 id="turnLabel">...</h2>
+            <br>
+            <table id="opponent"></table>
+            <table id="oscore"></table>
+            <hr>
+            <p id="diceRoll">6</p>
+            <hr>
+            <table id="player"></table>
+            <table id="pscore"></table>
+        </div>
+    </center>
+</body>
+</html>
